@@ -1,0 +1,494 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    user-select: none;
+    min-height: 550vh;
+    width: 100%;
+}
+.container{
+    height: 550vh;
+    width: 100%;
+    background: #d8c6c6;
+}
+header{
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 50px #808080;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 5;
+}
+.nav_bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 97%;
+}
+.nav_bar .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav_bar .logo h3{
+    margin-right: 20px;
+}
+.nav_bar .logo span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.nav_bar .logo span input{
+    padding: 8px 25px;
+    border: 1px solid orangered;
+    border-radius:20px;
+    outline: none;
+    font-size: medium;
+}
+.nav_bar .logo span img{
+    width: 25px;
+    position: absolute;
+    right: 2px;
+}
+
+.nav_bar nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav_bar nav ul li{
+    margin: 0 20px 0;
+    list-style: none;
+}
+.nav_bar nav ul li .link{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+}
+.nav_bar nav ul li .link:hover{
+    color: orangered;
+}
+.nav_bar nav ul li .link::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    border-radius: 10px;
+    background: orangered;
+    bottom: -5px;
+    left: 0;
+    transition: .5s ease;
+}
+.nav_bar nav ul li .link:hover::after{
+    width: 100%;
+}
+.contact{
+    text-transform: capitalize;
+    text-decoration: none;
+    background: orangered;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+/**main**/
+.space {
+    height: 200px;
+    width: 100%;
+    background: transparent;
+}
+
+main {
+    background: #d8c6c6;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+main .col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .col .row{
+    flex-basis: 50%;
+}
+main .col .r1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .col .r1 .rr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+main .col .r1 .rr span{
+    display: block;
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    border-radius: 20px;
+}
+main .col .r1 .rr .b1{
+    height: 150px;
+    width: 200px;
+    background-image: url(sunset-wallpaper-02.jpg);
+}
+main .col .r1 .rr .b2{
+    height: 230px;
+    width: 200px;
+    background-image: url(sunset-wallpaper-01.jpg)
+}
+main .col .r1 .b3{
+    height: 400px;
+    width: 300px;
+    margin-top: 90px;
+    display: block;
+    border-radius: 20px;
+    background-image: url(sunset-wallpaper-03.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+main .col .r2{
+    margin-left: 40px;
+}
+main .col .r2 h1{
+    font-size: 45px;
+}
+main .col .r2 p{
+    width: 500px;
+    font-size: 14px;
+}
+main .col .r2 button{
+    text-transform: capitalize;
+    text-decoration: none;
+    background: orangered;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+
+main .col .r2 a span img{
+transform: translate(50px, 20px);
+cursor: pointer;
+}
+main .top{
+    background: #fff;
+    padding: 80px 20px 0;
+    margin: 30px 0 0;
+} 
+main .top .cap p{
+    width: 500px;
+}
+main .top .card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main .top .card .ca{
+    border: 1px solid #0000006b;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 70px 0;
+    padding: 20px;
+    width: 400px;
+    height: 500px;
+}
+main .top .card .ca span{
+    display: block;
+    height: 100%;
+    border-radius: 20px;
+    width: 100%;
+    background: #000;
+}
+main .top .card .c1 span{
+    background-image: url(Nature_HD-wallpaper-10640143.jpg);
+    background-position: center;
+    background-size: cover;
+}
+main .top .card .c2 span{
+    background-image: url(IMG-20221123-WA0015.jpg);
+    background-position: center;
+    background-size: cover;
+}
+main .top .card .c3 span{
+    background-image: url(Romantic_Landscape-wallpaper-10511304.jpg);
+    background-position: center;
+    background-size: cover;
+}
+main .top .card .c1 h3{
+    margin: 20px 0;
+}
+main .top .card .c1 p{
+    margin: 10px 0;
+}
+main .top .card .c1 a{
+    text-decoration: none;
+    color: orangered;
+}
+main .best{
+    margin: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+main .best .cap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+main .best .cap h3{
+    margin: 20px 0;
+    font-size: 24px;
+}
+main .best .cap p{
+    text-align: center;
+}
+main .best .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+main .best .card .ca{
+    border: 1px solid #0000006b;
+    border-radius: 20px;
+    margin-right: 20px;
+    padding: 20px;
+}
+main .best .card .ca span{
+    display: block;
+    height: 300px;
+    width: 100%;
+    background: #000;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+main .best .card .ca .ba1{
+    background-image: url(Nature_HD-wallpaper-10640143.jpg);
+    background-position: center;
+    background-size: cover;
+}
+main .best .card .ca .ba2{
+    background-image: url(sunset-wallpaper-03.jpg);
+    background-position: center;
+    background-size: cover;
+}
+main .best .card .ca .ba3{
+    background-image: url(Romantic_Landscape-wallpaper-10511304.jpg);
+    background-position: center;
+    background-size: cover;
+}
+main .best .card .ca .ba4{
+    background-image: url(IMG-20221123-WA0015.jpg);
+    background-position: center;
+    background-size: cover;
+}
+main .best button{
+    text-transform: capitalize;
+    text-decoration: none;
+    background: orangered;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+main .trip{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 80px 0;
+}
+main .trip span{
+    display: block;
+    width: 900px;
+    border-radius: 20px;
+    height: 500px;
+    background-image: url(IMG-20221123-WA0016.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 30px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .trip span img{
+    z-index: 10;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 50%;
+    border: none;
+    height: 60px;
+}
+main .trip button{
+    text-transform: capitalize;
+    text-decoration: none;
+    background: orangered;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+main .blog{
+    background: #fff;
+    padding: 30px 0;
+}
+main .blog .cap{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+main .blog .cap .ca h3{
+    font-size: 30px;
+    margin: 10px;
+}
+main .blog .cap .ca p{
+    width: 210px;
+    text-align: left;
+}
+main .blog .cap a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #333;
+    transition: .5s ease;
+}
+main .blog .cap a:hover{
+    color: orangered;
+}
+main .blog .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .blog .card .ca{
+    border: 1px solid #333;
+    padding: 10px;
+    margin: 50px 30px;
+    border-radius: 20px;
+}
+main .blog .card .ca .span{
+    display: block;
+    width: 350px;
+    height: 300px;
+    background: #000;
+    border-radius: 20px;
+}
+main .blog .card .ca .s1{
+    background-image: url(IMG-20221123-WA0007.jpg);
+    background-position: center;
+    background-size: cover;
+}
+main .blog .card .ca .s2{
+    background-image: url(IMG-20221123-WA0003.jpg);
+    background-position: center;
+    background-size: cover;
+}
+main .blog .card .ca .s3{
+    background-image: url(IMG-20221123-WA0015.jpg);
+    background-position: center;
+    background-size: cover;
+}
+main .blog .card .ca h2{
+    font-size: 20px;
+    margin: 15px 0;
+}
+main .blog .card .ca .new{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main .blog .card .ca .new .send{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .blog .card .ca .new .send .sender{
+    display: block;
+    height: 40px;
+    width: 40px;
+    background-image: url(images\ \(2\).jpeg);
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+main .blog .card .ca .new .send .name h5{
+    font-size: 18px;
+}
+main .blog .card .ca .new .send .name p{
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+main .blog .card .ca .new a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: orangered;
+}
+main footer{
+    height: 300px;
+    width: 100%;
+    background: #9e2c02;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main footer div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 20px;
+}
+main footer div p{
+    width: 80px;
+}
+main footer div .social{
+    flex-direction: row;
+    margin: 20px 0;
+}
+main footer div .social img{
+    height: 30px;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: .5s ease;
+    border-radius: 50%;
+}
+main footer div .social .facebook:hover{
+    transform: translateY(10px);
+}
+main footer div .social .instagram:hover{
+    transform: translateY(10px);
+}
+main footer div .social .twitter:hover{
+    transform: translateY(10px);
+}
